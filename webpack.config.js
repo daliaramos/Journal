@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),    // new line
     new CleanWebpackPlugin(['dist']),   // new line
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'Journal',
       template: './src/index.html',
       inject: 'body'
     })
@@ -31,7 +31,7 @@ module.exports = {
           'css-loader'
         ]
       },
-      
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
